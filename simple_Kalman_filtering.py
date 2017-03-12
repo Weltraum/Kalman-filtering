@@ -34,7 +34,6 @@ def kalman_1_adapt(z):
     sz = (len(z), )
 
     Q = 1e-5  # Ковариационная матрица входящих шумов
-    #R = 1e-2  # Ковариационная матрица измерительных шумов
 
     xhat = np.zeros(sz)
     xhatminus = np.zeros(sz)
